@@ -1,0 +1,59 @@
+/* Basic colors */
+body {
+  font-family: Arial;
+  margin: 0;
+  background:lavenderblush;
+}
+/* Header using flexbox */
+header {
+  display: flex;
+  justify-content: space-between;
+  background: white ;
+  color: black;
+  padding: 10px;
+}
+
+nav a {
+  color: white;
+  margin-left: 10px;
+  text-decoration: beige;
+}
+
+/* Sections */
+section {
+  padding: 20px;
+  color :black;
+}
+
+/* Grid for projects */
+.projects {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  color:black;
+}
+
+/* Cards */
+.card {
+  background:lavender;
+  padding: 10px;
+  border: 1px solid;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px;
+}
+
+/* Responsive (bigger screen) */
+@media (min-width: 600px) {
+  .projects {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Image safety */
+img {
+  max-width: 100%;
+}
